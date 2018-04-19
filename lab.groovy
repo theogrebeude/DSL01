@@ -7,7 +7,7 @@ job('lab01') {
         }
     }
     triggers{
-        scm("H/15 * * *")
+        scm('H/15 * * * *')
     }
      wrappers {
         nodejs('Nodejs')
