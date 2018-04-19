@@ -1,5 +1,5 @@
-job('lab01') {
-    description 'projet NodeJS01'
+job('NodejsSum-test-puplish') {
+    description 'projet NodeJS Sum & dockerfile to dockerhub'
     scm {
         git('https://github.com/theogrebeude/nodejs-sum.git'){node ->
             node / gitConfigName('theo')
