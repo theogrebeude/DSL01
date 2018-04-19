@@ -1,18 +1,18 @@
 job('lab01') {
     description 'projet NodeJS01'
     scm {
-        github 'theogrebeude/nodejs01', 'master'
+        git('https://github.com/theogrebeude/nodejs01.git'){node ->
+            node / gitConfigName('theo')
+            node / gitConfigEmail('theo@theo.com')        
+        }
     }
     triggers{
-        scm("h/15 * * *")
-    }
-    steps {
-        gradle 'test'
+        scm("H/15 * * *")
     }
      wrappers {
-        nodejs('NodeJS 0.10.26')
+        nodejs('Nodejs')
     }
-    publishers {
-        archiveJunit 'build/test-results/**/*.xml'
+    steps{
+        shell('npm install')        
     }
 }
