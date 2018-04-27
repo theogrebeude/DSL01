@@ -1,10 +1,14 @@
 job('Sample PHP Site V1') {
     description 'Site PHP en V1'
     scm {
-        git('https://gitlab.com/alexandre.morat/eval-project.git'){node ->
-            node / gitConfigName('theo')
-            node / gitConfigEmail('theo@theo.com')        
-        }
+        remote {
+                name('origin')
+                url('git@gitlab.com:alexandre.morat/eval-project.git')
+            }
+            branch('v1')
+            }
+    }
+     
     }
     triggers{
         scm('H/15 * * * *')
