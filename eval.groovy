@@ -17,6 +17,7 @@ job('Sample_PHP_Site_V1') {
         dockerBuildAndPublish {
             repositoryName('theogrebeude/eval01')
             registryCredentials('87d8f730-2dd3-4457-b1d5-7ea35017fd9d')
+            buildContext('nginx-php-fpm')
             forcePull(true)
             createFingerprints(false)
             skipDecorate()           
@@ -43,6 +44,7 @@ job('Sample_PHP_Site_V2') {
         dockerBuildAndPublish {
             repositoryName('theogrebeude/eval02')
             registryCredentials('87d8f730-2dd3-4457-b1d5-7ea35017fd9d')
+            buildContext('nginx-php-fpm')
             forcePull(true)
             createFingerprints(false)
             skipDecorate()           
@@ -70,6 +72,7 @@ job('Sample_PHP_Site_V3') {
         dockerBuildAndPublish {
             repositoryName('theogrebeude/eval03')
             registryCredentials('87d8f730-2dd3-4457-b1d5-7ea35017fd9d')
+            buildContext('nginx-php-fpm')
             forcePull(true)
             createFingerprints(false)
             skipDecorate()           
