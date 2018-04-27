@@ -4,7 +4,7 @@ job('Sample_PHP_Site_V1') {
         git {
             remote {
                     name('origin')
-                    url('https://gitlab.com/alexandre.morat/eval-project.git')
+                    url('https://github.com/theogrebeude/samplephp.git')
                 }
                 branch('v1')
             }
@@ -31,7 +31,7 @@ job('Sample_PHP_Site_V2') {
         git {
             remote {
                     name('origin')
-                    url('https://gitlab.com/alexandre.morat/eval-project.git')
+                    url('https://github.com/theogrebeude/samplephp.git')
                 }
                 branch('v2')
             }
@@ -59,7 +59,7 @@ job('Sample_PHP_Site_V3') {
         git {
             remote {
                     name('origin')
-                    url('https://gitlab.com/alexandre.morat/eval-project.git')
+                    url('https://github.com/theogrebeude/samplephp.git')
                 }
                 branch('v3')
             }
