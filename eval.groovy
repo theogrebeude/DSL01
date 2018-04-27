@@ -1,4 +1,4 @@
-job('Sample PHP Site V1') {
+job('Sample_PHP_Site_V1') {
     description 'Site PHP en V1'
     scm {
         git {
@@ -24,7 +24,7 @@ job('Sample PHP Site V1') {
     }
 }
 
-job('Sample PHP Site V2') {
+job('Sample_PHP_Site_V2') {
     description 'Site PHP en V2'
     scm {
         git {
@@ -51,7 +51,7 @@ job('Sample PHP Site V2') {
 
 }
 
-job('Sample PHP Site V3') {
+job('Sample_PHP_Site_V3') {
     description 'Site PHP en V3'
     scm {
         git {
