@@ -8,8 +8,6 @@ job('Sample PHP Site V1') {
             branch('v1')
             }
     }
-     
-    }
     triggers{
         scm('H/15 * * * *')
     }  
