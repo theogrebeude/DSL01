@@ -3,7 +3,6 @@ job('Sample PHP Site V1') {
     scm {
         git {
             remote {
-                    name('origin')
                     url('git@gitlab.com:alexandre.morat/eval-project.git')
                 }
                 branch('v1')
@@ -30,7 +29,6 @@ job('Sample PHP Site V2') {
     scm {
         git {
             remote {
-                    name('origin')
                     url('git@gitlab.com:alexandre.morat/eval-project.git')
                 }
                 branch('v2')
@@ -58,7 +56,6 @@ job('Sample PHP Site V3') {
     scm {
         git {
             remote {
-                    name('origin')
                     url('git@gitlab.com:alexandre.morat/eval-project.git')
                 }
                 branch('v3')
