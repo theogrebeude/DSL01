@@ -16,7 +16,6 @@ job('Sample PHP Site V1') {
     steps {
         dockerBuildAndPublish {
             repositoryName('theogrebeude/eval01')
-            tag('${GIT_REVISION,length=7}')
             registryCredentials('87d8f730-2dd3-4457-b1d5-7ea35017fd9d')
             forcePull(true)
             createFingerprints(false)
@@ -43,7 +42,6 @@ job('Sample PHP Site V2') {
     steps {
         dockerBuildAndPublish {
             repositoryName('theogrebeude/eval02')
-            tag('${GIT_REVISION,length=7}')
             registryCredentials('87d8f730-2dd3-4457-b1d5-7ea35017fd9d')
             forcePull(true)
             createFingerprints(false)
@@ -71,7 +69,6 @@ job('Sample PHP Site V3') {
     steps {
         dockerBuildAndPublish {
             repositoryName('theogrebeude/eval03')
-            tag('${GIT_REVISION,length=7}')
             registryCredentials('87d8f730-2dd3-4457-b1d5-7ea35017fd9d')
             forcePull(true)
             createFingerprints(false)
