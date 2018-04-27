@@ -6,8 +6,8 @@ job('Sample PHP Site V1') {
                 url('git@gitlab.com:alexandre.morat/eval-project.git')
             }
             branch('v1')
-            }
-    }
+        }
+
     triggers{
         scm('H/15 * * * *')
     }  
