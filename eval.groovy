@@ -8,8 +8,5 @@ job('Sample PHP Site V1') {
     }
     triggers{
         scm('H/15 * * * *')
-    }
-     wrappers {
-        php
-    }    
+    }  
 }
